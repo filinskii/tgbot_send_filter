@@ -20,7 +20,7 @@ station = "path/your/files"
 period_station = "_2022 год (январь-декабрь).pdf"
 
 
-#Пользователи, которым разрешен доступ к телеграм боту (по стационарам) МЭС
+#Пользователи, которым разрешен доступ
 filters_stat = {
     'station_1' : ['telegramID', 'telegramID_2'],
     'station_2' : ['telegramID', 'telegramID_5'],
@@ -29,11 +29,11 @@ filters_stat = {
 
 }
 
-#Список стационаров Доминошки
+#Список
 stations = [f"{name}" for name in ['station_1', 'station_2', 'station_3', 'station_4',]]
 
 
-#Соединяем название файла на сервере, название файла при отправке, проверку на user_id МЭС
+#Соединяем название файла на сервере, название файла при отправке, проверку на user_id
 mapping_stat_path_filter = {
     filters_stat[0]: ('station_1', f"{filters_stat[0]}.pdf", filters_stat[filters_stat[0]]),
     filters_stat[1]: ('station_1', f"{filters_stat[1]}.pdf", filters_stat[filters_stat[1]]),
